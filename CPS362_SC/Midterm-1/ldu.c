@@ -67,7 +67,7 @@ int main() {
       }
       printf("\n");
   
-      printf("L matrix :\n");
+      printf("L matrix:\n");
       for (int i = 0; i < 3; i++){
           for (int j = 0; j < 3; j++){
               printf("%lf ", L[i][j]);
@@ -76,7 +76,7 @@ int main() {
       }
       printf("\n");
   
-      printf("U matrix (from LU):\n");
+      printf("U matrix:\n");
       for (int i = 0; i < 3; i++){
           for (int j = 0; j < 3; j++){
               printf("%lf ", U[i][j]);
@@ -85,7 +85,7 @@ int main() {
       }
       printf("\n");
   
-      printf("D matrix (from LDU):\n");
+      printf("D matrix:\n");
       for (int i = 0; i < 3; i++){
           for (int j = 0; j < 3; j++){
               printf("%lf ", D[i][j]);
@@ -94,7 +94,7 @@ int main() {
       }
       printf("\n");
   
-      printf("U_unit matrix (from LDU):\n");
+      printf("U_unit matrix:\n");
       for (int i = 0; i < 3; i++){
           for (int j = 0; j < 3; j++){
               printf("%lf ", U_final[i][j]);
