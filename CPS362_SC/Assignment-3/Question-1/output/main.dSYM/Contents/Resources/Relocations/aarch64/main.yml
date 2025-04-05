@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/adithya/CSProjects/MisCSAssingments/CPS362_SC/Assignment-3/output/main'
+relocations:     []
+...
