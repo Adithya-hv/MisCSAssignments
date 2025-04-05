@@ -19,3 +19,7 @@ This reduces the time complexity from O(n^3) to approximately O(n^2.81).
 M1 to M7 are all independent calculations and can be executed in parallel using threads. Once those values are computed, we use them to form the final output submatrices (C11 to C22). We used python to make the code more managable.
 
 Parallelism can also be introduced in the matrix addition and subtraction steps, although the gains there are smaller compared to the multiplication steps.
+
+## Space Complexity
+
+The space complexity is determined by the storage requirements for the input matrices, the output matrix, and the temporary matrices used during computation. At each recursive level, additional matrices are allocated to hold intermediate results, leading to an overall space complexity of O(n²).
