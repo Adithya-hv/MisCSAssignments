@@ -57,8 +57,8 @@ class DualNumber:
         return f"DualNumber(value={self.value:.4f}, derivative={self.derivative:.4f})"
 
 def f_forward(x):
-    # Example function: f(x) = x^2 + 3x + 2
-    return x ** 2 + 3 * x + 2
+    # Example: f(x) = x^7 + 23x + 8
+    return (x ** 7) + (x * 23.0) + 8.0
 
 
 # Forward mode test
@@ -115,8 +115,8 @@ class Node:
 
 
 def f_reverse(x):
-    # Example: f(x) = x^2 + 3x + 2
-    return (x ** 2) + (x * 3.0) + 2.0
+    # Example: f(x) = x^7 + 23x + 8
+    return (x ** 7) + (x * 23.0) + 8.0
 
 
 # Reverse mode test

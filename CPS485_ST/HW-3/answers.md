@@ -4,24 +4,24 @@ For this part we implemented automatic differentiation in both forward mode and 
 Basically, automatic differentiation is a way for the computer to calculate derivatives exactly by following the chain rule step by step through a computation instead of doing symbolic math or using numerical estimates.
 
 In forward mode, each variable keeps track of its own value and how fast it changes (its derivative) as the program runs.
-So when you compute something like f(x) = x² + 3x + 2, every arithmetic operation also updates the derivative automatically.
+So when you compute a function, every arithmetic operation also updates the derivative automatically.
 At the end, you just read the final value and its derivative.
 
 In reverse mode, it kind of does the same thing but backwards.
 The program first does a normal run to calculate the final value, then it goes back through every operation (like a chain of nodes) and uses the chain rule in reverse to see how much each variable contributed to the output.
 This is the same idea that powers backpropagation in neural networks.
 
-Both methods gave me the same result for f(x) = x² + 3x + 2 at x = 5, which shows they are working correctly.
+Both methods gave me the same result for f(x)= f(x) = x^7 + 23x + 8, which shows they are working correctly.
 
 ## Sample Output
 
 Forward mode result: \
-f(x): 42.0 \
-df/dx: 13.0 \
+f(x): 78248.0 \
+df/dx: 109398.0 \
 \
 Reverse mode result: \
-f(x): 42.0 \
-df/dx: 13.0
+f(x): 78248.0 \
+df/dx: 109398.0
 
 # Question-2
 
